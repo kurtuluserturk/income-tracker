@@ -1,9 +1,20 @@
 <template>
-  <h1>Hello</h1>
+  <Header />
 </template>
 
 <script>
-export default {};
+import Header from "./components/Header";
+
+export default {
+  components: {
+    Header,
+  },
+  setup() {
+    return {
+      Header,
+    };
+  },
+};
 </script>
 
 <style>
