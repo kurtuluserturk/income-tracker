@@ -1,13 +1,16 @@
 <template>
   <header>
     <h1>Income Tracker</h1>
-    <div class="total-income">€0</div>
+    <div class="total-income">€{{ totalIncome }}</div>
   </header>
 </template>
 
 <script>
 export default {
   name: "Header",
+  props: {
+    totalIncome: Number,
+  },
 };
 </script>
 
